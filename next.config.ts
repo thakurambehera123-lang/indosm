@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
+  // Instruct the Next.js compiler to treat Prisma as a clean external package
+  serverExternalPackages: ["@prisma/client"],
 };
 
 export default nextConfig;
